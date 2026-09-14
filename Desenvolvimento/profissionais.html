@@ -42,37 +42,39 @@
     <main>
         <!-- <form method="post" action="https://formtester.goodbytes.be/post.php"></form> ->link de exemplo -->
         <form method="post" action="https://formtester.goodbytes.be/post.php">
-            <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome" required>
+            <div class="grid">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required>
 
-            <label for="Registro">Registro</label>
-            <input type="text" name="Registro" id="Registro" required>
+                <label for="Registro">Registro</label>
+                <input type="text" name="registro" id="registro" required>
 
-            <label for="especialidade">Especialidade</label>
-            <select name="especialidade" id="especialidade" required>
-                <option value="">Selecione</option>
-                <option value="1">Oncologia</option>
-                <option value="2">Geriatria</option>
-                <option value="3">Dermatologia</option>
-                <option value="4">Cardiologia</option>
-                <option value="5">Pediatria</option>
-            </select>
+                <label for="especialidade">Especialidade</label>
+                <select name="especialidade" id="especialidade" required>
+                    <option value="">Selecione</option>
+                    <option value="1">Oncologia</option>
+                    <option value="2">Geriatria</option>
+                    <option value="3">Dermatologia</option>
+                    <option value="4">Cardiologia</option>
+                    <option value="5">Pediatria</option>
+                </select>
 
-            <label for="unidade">Unidade</label>
-            <select name="unidade" id="unidade" required>
-                <option value="">Selecione</option>
-                <option value="1">Unidade A</option>
-                <option value="2">Unidade B</option>
-                <option value="3">Unidade C</option>
-                <option value="4">Unidade D</option>
-                <option value="5">Unidade E</option>
-            </select>
+                <label for="unidade">Unidade</label>
+                <select name="unidade" id="unidade" required>
+                    <option value="">Selecione</option>
+                    <option value="1">Unidade A</option>
+                    <option value="2">Unidade B</option>
+                    <option value="3">Unidade C</option>
+                    <option value="4">Unidade D</option>
+                    <option value="5">Unidade E</option>
+                </select>
 
-            <label for="telefone">Telefone</label>
-            <input type="text" name="telefone" id="telefone">
+                <label for="telefone">Telefone</label>
+                <input type="text" name="telefone" id="telefone">
 
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
 
             <input type="button" value="Cancelar">
             <input type="submit" value="Salvar">
@@ -97,12 +99,12 @@
             <tbody>
                 <tr>
                     <td>1</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Maria Adelia Serravalle Bezerra</td>
+                    <td>CRM/AC 377</td>
+                    <td>Cardiologia</td>
+                    <td>Unidade A</td>
+                    <td>(68) 98205-4704</td>
+                    <td>monique.nespoli@uol.com.br</td>
                     <td>
                         <a href="javascript:void(0)">Editar</a>
                         <a href="javascript:void(0)">Excluir</a>
@@ -110,12 +112,12 @@
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Elielson Silveira Andrade</td>
+                    <td>CRM/AC 455</td>
+                    <td>Cardiologia</td>
+                    <td>Unidade B</td>
+                    <td>(68) 98085-4910</td>
+                    <td>elielson.andrade@gmail.com</td>
                     <td>
                         <a href="javascript:void(0)">Editar</a>
                         <a href="javascript:void(0)">Excluir</a>
@@ -123,12 +125,12 @@
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Davi Jesus Mendes</td>
+                    <td>CRM/AC 123</td>
+                    <td>Infectologia</td>
+                    <td>Unidade C</td>
+                    <td>(68) 98408-5352</td>
+                    <td>davi.mendes@yahoo.com</td>
                     <td>
                         <a href="javascript:void(0)">Editar</a>
                         <a href="javascript:void(0)">Excluir</a>
@@ -136,12 +138,12 @@
                 </tr>
                 <tr>
                     <td>4</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Carla da Paixão Valle</td>
+                    <td>CRM/AC 234</td>
+                    <td>Dermatologia</td>
+                    <td>Unidade A</td>
+                    <td>(68) 98395-5604</td>
+                    <td>carla.valle@gmail.com</td>
                     <td>
                         <a href="javascript:void(0)">Editar</a>
                         <a href="javascript:void(0)">Excluir</a>
@@ -149,12 +151,12 @@
                 </tr>
                 <tr>
                     <td>5</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Neuza Biango Nobrega</td>
+                    <td>CRM/AC 232</td>
+                    <td>Pediatria</td>
+                    <td>Unidade B</td>
+                    <td>(68) 98561-6622</td>
+                    <td>neuza.nobrega@uol.com.br</td>
                     <td>
                         <a href="javascript:void(0)">Editar</a>
                         <a href="javascript:void(0)">Excluir</a>
