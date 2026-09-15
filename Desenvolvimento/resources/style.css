@@ -1,20 +1,28 @@
-body{
+body {
     margin: 0;
     display: flex;
     flex-direction: column;
     height: 100vh;
+    font-family: system-ui, sans-serif;
+    color: #1a1a1a;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
+    background-image: linear-gradient(135deg, #2b5897, #374140);
+    color: white;
+}
+
+div#logo span {
+    font-size: 2em;
+    font-weight: bold;
 }
 
 main {
-    background-color: #e5dfc5;
+    background-color: #e6e0c7;
     padding: 1.5em;
     flex: 1;
-
 }
 
 form div.grid {
@@ -23,5 +31,20 @@ form div.grid {
     align-items: center;
     grid-gap: 0.5em;
     margin-bottom: 0.5em;
-    
+}
+
+footer {
+    background-color: #2a2c2b;
+    color: white;
+}
+footer a{
+    color: inherit;
+}
+
+form label::after {
+    content: ":";
+}
+
+input:invalid, select:invalid {
+    border-color: red;
 }
