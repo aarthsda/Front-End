@@ -11,6 +11,7 @@
 <body>
     <header>
         <!-- div#logo -> div com id -->
+         <!--  -->
         <div id="logo">
             <img src="../fundamentos-front-end-t10/imagens/logo_azul.png" alt="Logo do SGCM">
             <span>SGCM</span>
@@ -18,7 +19,7 @@
         <div id="usuarioInfo">
             <span>Usuário: Administrador (admin)</span>
             <span>Papel: ADMIN</span>
-            <a href="javascript:void(0)">
+            <a href="javascript:void(0)" class="botao">
                 Logout
             </a>
         </div>
@@ -35,9 +36,15 @@
             <li><a href="pacientes.html">Pacientes</a></li>
             <li><a href="profissionais.html">Profissionais</a></li>
             <li><a href="unidades.html">Unidades</a></li>
-            <li><a href="especialidades.html">Especialidades</a></li>
-            <li><a href="convenios.html">Convênios</a></li>
-            <li><a href="usuarios.html">Usuários</a></li>
+            <li id="dropdown">
+                <!-- &#9660 é uma entidade html -->
+                <a href="javascript:void(0)">Configurações <span>&#9660;</span></a>
+                <div id="dropdown_menu">
+                    <a href="especialidades.html">Especialidades</a>
+                    <a href="convenios.html">Convênios</a>
+                    <a href="usuarios.html">Usuários</a>
+                </div>
+            </li>
         </ul>
     </nav>
     <main>
@@ -47,7 +54,7 @@
                 <label for="nome">Nome</label>
                 <input type="text" name="nome" id="nome" required>
 
-                <label for="Registro">Registro</label>
+                <label for="registro">Registro</label>
                 <input type="text" name="registro" id="registro" required>
 
                 <label for="especialidade">Especialidade</label>
@@ -73,14 +80,12 @@
                 <label for="telefone">Telefone</label>
                 <input type="text" name="telefone" id="telefone" required>
 
-                <label for="email">Email</label>
+                <label for="email">E-mail</label>
                 <input type="email" name="email" id="email" required>
             </div>
 
             <input type="button" value="Cancelar">
             <input type="submit" value="Salvar">
-
-
         </form>
 
         <!-- table>tbody>tr*8>td{$}+td*6+td>a[href="javascript:void(0)"]{Editar}^a[href="javascript:void(0)"]{Excluir} -> tabelas -->
@@ -107,8 +112,8 @@
                     <td>(68) 98205-4704</td>
                     <td>monique.nespoli@uol.com.br</td>
                     <td>
-                        <a href="javascript:void(0)">Editar</a>
-                        <a href="javascript:void(0)">Excluir</a>
+                        <a href="javascript:void(0)" class="botao">Editar</a>
+                        <a href="javascript:void(0)" class="botao excluir">Excluir</a>
                     </td>
                 </tr>
                 <tr>
@@ -120,8 +125,8 @@
                     <td>(68) 98085-4910</td>
                     <td>elielson.andrade@gmail.com</td>
                     <td>
-                        <a href="javascript:void(0)">Editar</a>
-                        <a href="javascript:void(0)">Excluir</a>
+                        <a href="javascript:void(0)" class="botao">Editar</a>
+                        <a href="javascript:void(0)" class="botao excluir">Excluir</a>
                     </td>
                 </tr>
                 <tr>
@@ -133,8 +138,8 @@
                     <td>(68) 98408-5352</td>
                     <td>davi.mendes@yahoo.com</td>
                     <td>
-                        <a href="javascript:void(0)">Editar</a>
-                        <a href="javascript:void(0)">Excluir</a>
+                        <a href="javascript:void(0)" class="botao">Editar</a>
+                        <a href="javascript:void(0)" class="botao excluir">Excluir</a>
                     </td>
                 </tr>
                 <tr>
@@ -146,8 +151,8 @@
                     <td>(68) 98395-5604</td>
                     <td>carla.valle@gmail.com</td>
                     <td>
-                        <a href="javascript:void(0)">Editar</a>
-                        <a href="javascript:void(0)">Excluir</a>
+                        <a href="javascript:void(0)" class="botao">Editar</a>
+                        <a href="javascript:void(0)" class="botao excluir">Excluir</a>
                     </td>
                 </tr>
                 <tr>
@@ -159,8 +164,8 @@
                     <td>(68) 98561-6622</td>
                     <td>neuza.nobrega@uol.com.br</td>
                     <td>
-                        <a href="javascript:void(0)">Editar</a>
-                        <a href="javascript:void(0)">Excluir</a>
+                        <a href="javascript:void(0)" class="botao">Editar</a>
+                        <a href="javascript:void(0)" class="botao excluir">Excluir</a>
                     </td>
                 </tr>
             </tbody>
