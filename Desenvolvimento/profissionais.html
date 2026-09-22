@@ -6,14 +6,14 @@
     <meta charset="utf-8">
     <title>SGCM - Profissionais</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./resources/style.css">
+    <link rel="stylesheet" href="../Desenvolvimento/resources/style.css">
     <script src="./js/script.js" defer></script>
 </head>
 
 <body>
     <header>
         <div id="logo">
-            <img src="imagens/logo_branco.png" alt="Logo SGCM">
+            <img src="./imagens/logo_branco.png" alt="Logo SGCM">
             <span>SGCM</span>
         </div>
         <div id="usuarioInfo">
@@ -42,7 +42,7 @@
         </ul>
     </nav>
     <main>
-        <form method="post" action="">
+        <form method="post" class="inativo">
             <div class="grid">
                 <label for="nome">Nome</label>
                 <input type="text" name="nome" id="nome" required>
@@ -76,10 +76,11 @@
                 <label for="email">E-mail</label>
                 <input type="email" name="email" id="email" required>
             </div>
-
+ht>
             <input type="button" value="Cancelar">
             <input type="submit" value="Salvar">
         </form>
+        <a href="javascript:void(0)" id="adicionar" class="botao">Adicionar</a>
         <a href="javascript:void(0)" id="carregar" class="botao">Carregar dados</a>
         <table>
             <thead>
@@ -163,7 +164,7 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <td colspan="8">Total de registros: <span id="Total">5</span></td>
+                    <td colspan="8">Total de registros: <span id="total">5</span></td>
                 </tr>
             </tfoot>
         </table>

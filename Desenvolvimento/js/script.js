@@ -107,3 +107,50 @@ function inserirItem(tabela, item, campos) {
 const botaoCarregar = document.querySelector("a#carregar");
 botaoCarregar.addEventListener("click", carregarDados);
 
+const form = document.querySelector('form');
+const botaoAdicionar = document.querySelector('a#adicionar');
+const botaoCancelar = document.querySelector('input[value="Cancelar"]');
+const btnSalvar = document.querySelector('input[type="submit"]');
+const tabela = document.querySelector('table');
+
+function alternarVisibilidadeForm() {
+    [form, botaoAdicionar, botaoCarregar, tabela].forEach(elemento => {
+        elemento.classList.toggle('inativo');
+    });
+
+    form.reset();
+}
+
+[botaoAdicionar, botaoCancelar].forEach(botao => {
+    botao.addEventListener('click', alternarVisibilidadeForm);
+});
+
+form.addEventListener('submit', (evento) => {
+    evento.preventDefault();
+
+    const item = {
+        id: proximoId(),
+        nome: form.nome.value,
+        registro: form.registro.value,
+        especialidade: form.especialidade.options[form.especialidade.selectedIndex].label,
+        unidade: form.unidade.options[form.unidade.selectedIndex].label,
+        telefone: form.telefone.value,
+        email: form.email.value
+    };
+
+    inserirItem(tabela, item, Object.keys(item));
+    alternarVisibilidadeForm();
+});
+
+function proximoId() {
+    const linhas = tabela.tBodies[0].rows;
+    let maior = 0;
+    for (const linha of linhas) {
+        const id = Number(linha.cells[0].textContent);
+        if (id > maior) {
+            maior = id;
+        }
+    }
+    return maior + 1;
+}
+
